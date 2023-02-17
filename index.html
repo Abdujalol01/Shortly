@@ -4,11 +4,143 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Css starter</title>
+  <title>Shortly</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- /Icons -->
+  <!-- /Fonts -->
   <link rel="stylesheet" href="/Css/normalize.css">
   <link rel="stylesheet" href="/Css/styles.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="container site-header__container">
+      <a  class="site-header__link" href="index.html">
+        <img  class="site-header__img" src="/img/icon.svg" alt="icon">
+      </a>
+      <nav class="sitenav">
+        <ul class="sitenav__list">
+          <li class="sitenav__item"><a  class="sitenav__link"  href="#">Features</a></li>
+          <li class="sitenav__item"><a  class="sitenav__link"  href="#">Pricing</a></li>
+          <li class="sitenav__item"><a  class="sitenav__link"  href="#">Resources</a></li>
+        </ul>
+      </nav>
+      <div class="site-header__button">
+        <a class="button btn--simple" href="#">Login</a>
+        <a class="button btn--small" href="#">Sign Up</a>
+      </div>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container hero__container">
+      <div class="hero__info">
+        <h2 class="hero__heading">More than just <br> shorter links</h2>
+        <p class="hero__text">Build your brand’s recognition and get detailed <br> insights on how your links are performing.</p>
+        <a class="button btn--big"  href="#">Get Started</a>
+      </div>
+    </div>
+  </section>
+  <section class="hero__bottom">
+    <div class="container">
+      <form action="https://echo.htmlacademy.ru" class="hero__bottom--form" method="post">
+        <input class="hero__link" type="url" placeholder="Shorten a link here...">
+        <button class="button btn--rectangle" type="submit">Shorten It!</button>
+      </form>
+    </div>
+  </section>
+  <main class="main__content">
+    <div class="container main__content--container">
+      <h2 class="main__content--heading">Advanced tatistics</h2>
+      <p class="main__content--text">Track how your links are performing across the web with <br> our advanced statistics dashboard.</p>
+      <ul class="main__content--items">
+        <li class="main__content--item item-content">
+          <div class="item-content__icon--wrapper">
+            <img src="/img/brand.svg" alt="brand" class="item-content__icon" width="40px" height="40px">
+          </div>
+          <h3 class="item-content__heading">Brand Recognition</h3>
+          <p class="item-content__text">Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.</p>
+        </li>
+        <li class="main__content--item item-content">
+          <div class="item-content__icon--wrapper">
+            <img src="/img/detailed.svg" alt="brand" class="item-content__icon" width="40px" height="40px">
+          </div>
+          <h3 class="item-content__heading">Detailed Records</h3>
+          <p class="item-content__text">Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+        </li>
+        <li class="main__content--item item-content">
+          <div class="item-content__icon--wrapper">
+            <img src="/img/Shape.svg" alt="brand" class="item-content__icon" width="40px" height="40px">
+          </div>
+          <h3 class="item-content__heading">Fully Customizable</h3>
+          <p class="item-content__text">Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+        </li>
+      </ul>
+    </div>
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container cta__container">
+        <h2 class="cta__heading">Boost your links today</h2>
+        <a class="button btn--big " href="#">Get Started</a>
+      </div>
+    </section>
+  </main>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <a href="#" class="footer__logo">
+        <img class="footer__img" src="/img/shortl white.svg" alt="logo" width="120px">
+      </a>
+      <div class="footer__features--wrapper">
+        <div class="footer__features">
+          <h3 class="footer__features-heading">
+            Features
+          </h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a  class="footer__link"  href="#">Link Shortening</a></li>
+            <li class="footer__item"><a  class="footer__link"  href="#">Branded Links</a></li>
+            <li class="footer__item"><a  class="footer__link"  href="#">Analytics</a></li>
+          </ul>
+        </div>
+        <div class="footer__features">
+          <h3 class="footer__features-heading">
+            Resources
+          </h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a  class="footer__link"  href="#">Blog</a></li>
+            <li class="footer__item"><a  class="footer__link"  href="#"> Developers</a></li>
+            <li class="footer__item"><a  class="footer__link"  href="#">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer__features">
+          <h3 class="footer__features-heading">
+            Company
+          </h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a  class="footer__link"  href="#">About</a></li>
+            <li class="footer__item"><a  class="footer__link"  href="#"> Our Team</a></li>
+            <li class="footer__item"><a  class="footer__link"  href="#">Careers</a></li>
+            <li class="footer__item"><a  class="footer__link"  href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__features--icons">
+        <a href="#" class="features__icons--link">
+          <i class="fa-brands fa-square-facebook"></i>
+        </a>
+        <a href="#" class="features__icons--link">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="#" class="features__icons--link">
+          <i class="fa-brands fa-pinterest"></i>
+        </a>
+        <a href="#" class="features__icons--link">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
   <script src="/js/main.js"></script>
 </body>
 </html>
